@@ -1,14 +1,129 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f7f8;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.page {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #565a5c;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: #565a5c;
+}
+
+h3 {
+  font-size: 1.1rem;
+  color: #565a5c;
+  margin: 10px 0;
+}
+
+p {
+  margin: 0;
+  color: #8b99a6;
+}
+
+input,
+textarea {
+  background-color: #fafafb;
+  border: solid 1px #ced4d9;
+  padding: 8px 12px;
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif;
+  appearance: none;
+  border-radius: 4px;
+  outline: none;
+  transition: border 100ms ease-in-out;
+  min-width: 275px;
+  margin-bottom: 20px;
+}
+
+textarea:active,
+textarea:focus,
+input:active,
+input:focus {
+  border: solid 1px #b2b3b3;
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: #565a5c;
+}
+
+button {
+  display: block;
+  appearance: none;
+  cursor: pointer;
+  font-family: 'Lato', sans-serif;
+  border: none;
+  padding: 12px 20px;
+  background-color: #3e90d6;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  outline: none;
+  transition: background-color 125ms ease-in-out;
+}
+
+button:hover,
+button:focus {
+  background-color: #439be8;
+}
+
+button:active {
+  background-color: #3883c4;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  background: #fff;
+  border: solid 1px #ced4d9;
+  border-radius: 4px;
+  padding: 18px;
 }
