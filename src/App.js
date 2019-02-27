@@ -1,6 +1,5 @@
 import React from 'react';
 import RecipeForm from './RecipeForm';
-import './App.css';
 
 class App extends React.Component {
   render() {

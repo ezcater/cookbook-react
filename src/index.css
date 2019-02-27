@@ -22,13 +22,6 @@ code {
     monospace;
 }
 
-.page {
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 60px;
-}
-
 h1,
 h2,
 h3,
@@ -119,6 +112,13 @@ button:active {
 
 img {
   width: 100%;
+}
+
+.page {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 60px;
 }
 
 .card {
