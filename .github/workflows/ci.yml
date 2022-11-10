@@ -1,0 +1,32 @@
+name: CI
+on: push
+jobs:
+  jest:
+    name: Jest
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Dependencies
+        uses: ./.github/actions/dependencies
+
+      - name: Run tests
+        run: yarn test
+        timeout-minutes: 10
+
+  validate:
+    name: Code quality validations
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Dependencies
+        uses: ./.github/actions/dependencies
+
+      - name: eslint
+        run: yarn eslint .
+
+      - name: prettier
+        run: yarn prettier -c .

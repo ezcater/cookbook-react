@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
@@ -11,14 +12,14 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f4f7f8;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
@@ -57,7 +58,7 @@ textarea {
   border: solid 1px #ced4d9;
   padding: 8px 12px;
   font-size: 1rem;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   appearance: none;
   border-radius: 4px;
   outline: none;
@@ -89,7 +90,7 @@ button {
   display: block;
   appearance: none;
   cursor: pointer;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   border: none;
   padding: 12px 20px;
   background-color: #3e90d6;
